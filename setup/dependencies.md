@@ -1,14 +1,14 @@
 ---
-description: Describes how to add Minestom as a dependency in your project.
+description: Describes how to add Microtus as a dependency in your project.
 ---
 
 # Dependencies
 
 {% hint style="info" %}
-Minestom needs Java 17 or newer in order to run. If you are using Gradle, you must use version 7.2 or higher.
+Minestom needs Java 21 or newer in order to run. If you are using Gradle, you must use version 8.5 or higher.
 {% endhint %}
 
-Adding Minestom to your Java project is really simple, you only need to add a few repositories:
+Adding Microtus to your Java project is really simple, you only need to add a few repositories:
 
 ## Repositories
 
@@ -18,7 +18,6 @@ Adding Minestom to your Java project is really simple, you only need to add a fe
 repositories {
     // ...
     mavenCentral()
-    maven { url 'https://jitpack.io' }
 }
 ```
 {% endtab %}
@@ -28,20 +27,7 @@ repositories {
 repositories {
     // ...
     mavenCentral()
-    maven(url = "https://jitpack.io")
 }
-```
-{% endtab %}
-
-{% tab title="Maven" %}
-```markup
-<repositories>
-    <!-- ... -->
-    <repository>
-        <id>jitpack</id>
-        <url>https://jitpack.io</url>
-    </repository>
-</repositories>
 ```
 {% endtab %}
 {% endtabs %}
@@ -53,7 +39,7 @@ repositories {
 ```groovy
 dependencies {
     // ...
-    implementation 'com.github.Minestom:Minestom:VERSION'
+    implementation 'net.onelitefeather.microtus:Microtus:VERSION'
 }
 ```
 {% endtab %}
@@ -62,7 +48,7 @@ dependencies {
 ```groovy
 dependencies {
     //...
-    implementation("com.github.Minestom:Minestom:VERSION")
+    implementation("net.onelitefeather.microtus:Microtus:VERSION")
 }
 ```
 {% endtab %}
@@ -72,15 +58,9 @@ dependencies {
 <dependencies>
     <!-- ... -->
     <dependency>
-        <groupId>com.github.Minestom</groupId>
-        <artifactId>Minestom</artifactId>
+        <groupId>net.onelitefeather.microtus</groupId>
+        <artifactId>Microtus</artifactId>
         <version>VERSION</version>
-        <exclusions>
-            <exclusion>
-                <groupId>org.jboss.shrinkwrap.resolver</groupId>
-                <artifactId>shrinkwrap-resolver-depchain</artifactId>
-            </exclusion>
-        </exclusions>
     </dependency>
 </dependencies>
 ```
@@ -89,4 +69,4 @@ When using Maven it is recommended to exclude the artifact `shrinkwrap-resolver-
 {% endtab %}
 {% endtabs %}
 
-A list of versions can be found at [https://jitpack.io/#Minestom/Minestom](https://jitpack.io/#Minestom/Minestom).
+A list of versions can be found at [https://central.sonatype.com/search?q=microtus](https://central.sonatype.com/search?q=microtus).
