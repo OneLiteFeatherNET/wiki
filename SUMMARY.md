@@ -8,22 +8,6 @@
 * [Dependencies](setup/dependencies.md)
 * [Your first server](setup/your-first-server.md)
 
-## Thread Architecture
-
-* [Thread safety in the JVM](thread-architecture/thread-safety.md)
-* [Acquirable API](thread-architecture/acquirable-api/README.md)
-  * [The inside](thread-architecture/acquirable-api/inside-the-api.md)
-
-## World
-
-* [Instances](world/instances.md)
-* [Chunk management](world/chunk-management.md)
-  * [Anvil Loader](world/anvilloader.md)
-* [Blocks](world/blocks.md)
-* [Coordinates](world/coordinates.md)
-* [Generation](world/generation.md)
-* [Batch](world/batch.md)
-
 ## Feature
 
 * [Adventure](feature/adventure.md)
@@ -46,6 +30,22 @@
   * [GLFWMapRendering](feature/map-rendering/glfwmaprendering.md)
 * [Query system](feature/query.md)
 * [Open to LAN](feature/open-to-lan.md)
+
+## Thread Architecture
+
+* [Thread safety in the JVM](thread-architecture/thread-safety.md)
+* [Acquirable API](thread-architecture/acquirable-api/README.md)
+  * [The inside](thread-architecture/acquirable-api/inside-the-api.md)
+
+## World
+
+* [Instances](world/instances.md)
+* [Chunk management](world/chunk-management.md)
+  * [Anvil Loader](world/anvilloader.md)
+* [Blocks](world/blocks.md)
+* [Coordinates](world/coordinates.md)
+* [Generation](world/generation.md)
+* [Batch](world/batch.md)
 
 ## Extension System
 
