@@ -1,6 +1,7 @@
 # Table of contents
 
-* [Presentation](README.md)
+* [Introduction](README.md)
+* [Presentation](<README (1).md>)
 
 ## Setup
 
@@ -14,6 +15,7 @@
   * [The inside](thread-architecture/acquirable-api/inside-the-api.md)
 
 ## World
+
 * [Instances](world/instances.md)
 * [Chunk management](world/chunk-management.md)
   * [Anvil Loader](world/anvilloader.md)
