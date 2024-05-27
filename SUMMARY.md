@@ -3,10 +3,10 @@
 * [Introduction](README.md)
 * [Presentation](<README (1).md>)
 
-## Setup
+## Getting started
 
-* [Dependencies](setup/dependencies.md)
-* [Your first server](setup/your-first-server.md)
+* [Dependencies](getting-started/dependencies.md)
+* [Your first server](getting-started/your-first-server.md)
 
 ## Feature
 

@@ -1,5 +1,5 @@
 ---
-description: Describes how to add Microtus as a dependency in your project.
+description: Describes how to add Minestom as a dependency in your project.
 ---
 
 # Dependencies
