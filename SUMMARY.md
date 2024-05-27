@@ -47,9 +47,6 @@
 * [Query system](feature/query.md)
 * [Open to LAN](feature/open-to-lan.md)
 
-## Expansion
+## Extension System
 
-* [Extensions](expansion/extensions.md)
-* [Scripting](expansion/scripting/README.md)
-  * [WIP Commands](expansion/scripting/wip-commands.md)
-  * [WIP Java Interoperability](expansion/scripting/wip-java-interoperability.md)
+* [Extensions](extension-system/extensions.md)
