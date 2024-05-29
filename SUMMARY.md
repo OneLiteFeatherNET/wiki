@@ -6,6 +6,7 @@
 
 * [Dependencies](getting-started/dependencies.md)
 * [Your first server](getting-started/your-first-server.md)
+* [CloudNet v4 Support](getting-started/cloudnet-v4-support.md)
 
 ## Feature
 
