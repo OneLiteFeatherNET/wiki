@@ -16,7 +16,6 @@ Adding Microtus to your Java project is really simple, you only need to add a fe
 {% tab title="Gradle (Groovy)" %}
 ```groovy
 repositories {
-    // ...
     mavenCentral()
 }
 ```
@@ -25,7 +24,6 @@ repositories {
 {% tab title="Gradle (Kotlin)" %}
 ```groovy
 repositories {
-    // ...
     mavenCentral()
 }
 ```
@@ -38,35 +36,83 @@ repositories {
 {% tab title="Gradle (Groovy)" %}
 ```groovy
 dependencies {
-    // ...
-    implementation 'net.onelitefeather.microtus:Microtus:VERSION'
+    implementation platform('net.onelitefeather.microtus:bom:version')
+    implementation 'net.onelitefeather.microtus:Microtus' // Main Components
+
+    testImplementation 'net.onelitefeather.microtus.testing:testing' // Testing Components
 }
 ```
 {% endtab %}
 
 {% tab title="Gradle (Kotlin)" %}
-```groovy
+```kotlin
 dependencies {
-    //...
-    implementation("net.onelitefeather.microtus:Microtus:VERSION")
+    implementation(platform("net.onelitefeather.microtus:bom:VERSION")
+    implementation("net.onelitefeather.microtus:Microtus") // Main components
+
+    testImplementation("net.onelitefeather.microtus.testing:testing") // Test components
 }
 ```
 {% endtab %}
 
+{% tab title="Maven (Parent)" %}
+```xml
+<project ...>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>your.project</groupId>
+    <artifactId>microtus-project</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>Microtus </name>
+    <parent>
+        <groupId>net.onelitefeather.microtus</groupId>
+        <artifactId>bom</artifactId>
+        <version>VERSION</version>
+    </parent>
+    
+    <dependencies>
+        <!-- ... -->
+        <dependency>
+            <groupId>net.onelitefeather.microtus</groupId>
+            <artifactId>Microtus</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.onelitefeather.microtus.testing</groupId>
+            <artifactId>testing</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>
+```
+{% endtab %}
+
 {% tab title="Maven" %}
-```markup
+```xml
+<dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>net.onelitefeather.microtus</groupId>
+            <artifactId>bom</artifactId>
+            <version>VERSION</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
 <dependencies>
     <!-- ... -->
     <dependency>
         <groupId>net.onelitefeather.microtus</groupId>
         <artifactId>Microtus</artifactId>
-        <version>VERSION</version>
+    </dependency>
+    <dependency>
+        <groupId>net.onelitefeather.microtus.testing</groupId>
+        <artifactId>testing</artifactId>
+        <scope>test</scope>
     </dependency>
 </dependencies>
 ```
-
-When using Maven it is recommended to exclude the artifact `shrinkwrap-resolver-depchain` from the group `org.jboss.shrinkwrap.resolver` as otherwise resolving the dependencies will fail. Shrinkwrap can be added as a separate dependency if needed without issues to restore its functionality.
 {% endtab %}
 {% endtabs %}
 
-A list of versions can be found at [https://central.sonatype.com/search?q=microtus](https://central.sonatype.com/search?q=microtus).
+**A list of versions can be found at** [**https://central.sonatype.com/search?q=microtus**](https://central.sonatype.com/search?q=microtus)**.**
