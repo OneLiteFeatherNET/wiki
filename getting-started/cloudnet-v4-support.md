@@ -30,7 +30,7 @@ There are 2 options how to use Microtus in CloudNet v4.
 2.  Create a task in CloudNet with the `Minestom` environment
 
     <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>RC9 screenshot of Task Setup of a minestom task</p></figcaption></figure>
-3. Place the jar as application.jar in the template of the task
+3. Place the jar as `application.jar` in the template of the task
 4. Develop extensions :wink:
 
 </details>
