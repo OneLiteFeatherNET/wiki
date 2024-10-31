@@ -16,16 +16,21 @@ layout:
 
 ## What is Microtus?
 
-[**Microtus**](https://github.com/OneLiteFeatherNET/Microtus) is not only the latin term of a [common vole](https://en.wikipedia.org/wiki/Microtus), it is the up to date, open source fork of the serversoftware [**Minestom**](https://minestom.net/) which aims for code quality & stability. In order to do so, you, the community are playing an important part! Unlike (Craft-) Bukkit, Spigot, Paper and their corresponding forks, Microtus is **not** a drop in replacement for a whole Minecraft Vanilla experience. The main reason behind this is that Microtus (and Minestom) contains no Minecraft/Mojang/Microsoft developed Code.
+[**Microtus**](https://github.com/OneLiteFeatherNET/Microtus) is not only the latin term of a [common vole](https://en.wikipedia.org/wiki/Microtus), it is the up to date, open source fork of the server software [**Minestom**](https://minestom.net/) which aims for code quality & stability. In order to do so, you, the community are playing an important part! Unlike (Craft-) Bukkit, Spigot, Paper and their corresponding forks, Microtus is **not** a drop in replacement for a whole Minecraft Vanilla experience. The main reason behind this is that Microtus (and Minestom) contains no Minecraft/Mojang/Microsoft developed Code.
 
 \
 \-> Microtus is a framework or literally "construction kit", it is meant to help building your own features, servers or minigames. Like a sandbox, it contains tools like a shovel for sand to build your vision of a minigame or server implementation, **but without any vanilla logic!**
 
-## Why Microtus ?&#x20;
+## Why Microtus ?
 
 Microtus has the ability to accommodate hundreds or thousands of players with little memory. It is also possible to achieve the result faster without a lot of cancellation logic. Everything that is known as NMS[^1] under Paper/Spigot is supplied as an interface with Microtus.
+Microtus is changing core elements to absorb unexpected behaviour in a more effective way to improve the developer experience and framework usability.
 
 ## Why Microtus and not Minestom?
+
+On the one hand, Minestom is more [feature-driven](https://en.wikipedia.org/wiki/Feature-driven_development) than Microtus. 
+On the other hand, one of the Microtus main focus lies in fixing architecture issues from upstream which were made in the past. 
+This has the advantage that Microtus can have a solid ground to build on so that additional features can be more stable.
 
 Minestom decided some time ago to add functions such as
 
