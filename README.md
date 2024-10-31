@@ -14,19 +14,27 @@ layout:
 
 # Introduction
 
-## What is Microtus?
+## What is [Microtus](https://github.com/OneLiteFeatherNET/Microtus)?
 
-[**Microtus**](https://github.com/OneLiteFeatherNET/Microtus) is not only the latin term of a [common vole](https://en.wikipedia.org/wiki/Microtus), it is the up to date, open source fork of the server software [**Minestom**](https://minestom.net/) which aims for code quality & stability. In order to do so, you, the community are playing an important part! Unlike (Craft-) Bukkit, Spigot, Paper and their corresponding forks, Microtus is **not** a drop in replacement for a whole Minecraft Vanilla experience. The main reason behind this is that Microtus (and Minestom) contains no Minecraft/Mojang/Microsoft developed Code.
+<div style="display: flex; align-items: center; gap: 20px;">
+  <img src="readme-assets/logo.png" alt="Microtus Logo" width="200" />
+    <div>
+        <p>
+        </p>
+Microtus is not only the latin term of a common vole (see: en.wikipedia.org/wiki/Microtus), it is the up to date, open source fork of the serversoftware Minestom which aims for code quality & stability. In order to do so, you, the community are playing an important part! Unlike (Craft-) Bukkit, Spigot, Paper and their corresponding forks, Microtus is NOT a drop in replacement for a whole Minecraft Vanilla experience. The main reason behind this is that Microtus (and Minestom) contains no Minecraft/Mojang/Microsoft developed Code.
 
-\
-\-> Microtus is a framework or literally "construction kit", it is meant to help building your own features, servers or minigames. Like a sandbox, it contains tools like a shovel for sand to build your vision of a minigame or server implementation, **but without any vanilla logic!**
+-> Microtus is a framework or literally a "construction kit", <strong>without any vanilla logic!</strong>
+        </div>
+    </div>
 
 ## Why Microtus ?
 
 Microtus has the ability to accommodate hundreds or thousands of players with little memory. It is also possible to achieve the result faster without a lot of cancellation logic. Everything that is known as NMS[^1] under Paper/Spigot is supplied as an interface with Microtus.
 Microtus is changing core elements to absorb unexpected behaviour in a more effective way to improve the developer experience and framework usability.
 
-## Why Microtus and not Minestom?
+---
+
+## Why Microtus and not [**Minestom**](https://minestom.net/)?
 
 On the one hand, Minestom is more [feature-driven](https://en.wikipedia.org/wiki/Feature-driven_development) than Microtus. 
 On the other hand, one of the Microtus main focus lies in fixing architecture issues from upstream which were made in the past. 
@@ -46,9 +54,13 @@ It also allows you to deploy smaller jars instead of a large [monolithic](https:
 
 In addition, we believe that it is a lesser evil to leak a partial component on the internet than a large jar file containing all dependencies or internal libs.
 
+---
+
 ### TL;DR
 
 We have reinstalled the above features and give full flexibility to the developers and re-document code from upstream or improve it.
+
+--- 
 
 ## Our goals
 
@@ -59,3 +71,5 @@ The main goals can be found here on the [roadmap](https://github.com/orgs/OneLit
 **One of our biggest points is documentation, listening to the community and stimulating discussions. So you are welcome to discuss things on our** [**Discord**](https://discord.onelitefeather.net) **or** [**Github**](https://github.com/OneLiteFeatherNET/Microtus/discussions)**.**
 
 [^1]: Native Minecraft Source
+
+---
